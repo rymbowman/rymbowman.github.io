@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../App.css";
 const SlideshowImages = () => {
   return (
     <div className="slideshow-images-container">
