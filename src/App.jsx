@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import HeaderBio from "./components/HeaderBio";
 import NavBar from "./components/NavBar";
+import AboutIntro from "./components/AboutIntro";
 
 function App() {
   return (
@@ -14,12 +15,7 @@ function App() {
       <NavBar />
       <HeaderGreeting />
       <HeaderBio />
-      <div id="about-section-intro">
-        <p>
-          Thanks for visiting! Trust is key to any relationship, so here is a
-          bit about me...
-        </p>
-      </div>
+      <AboutIntro />
       <div id="about-container">
         <About />
         <SlideshowImages />

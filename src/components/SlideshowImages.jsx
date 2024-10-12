@@ -6,7 +6,8 @@ import image4 from "../assets/images/image4.jpg";
 import image5 from "../assets/images/image5.jpg";
 import image6 from "../assets/images/image6.jpg";
 import image7 from "../assets/images/image7.jpg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../App.css";
 const SlideshowImages = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -32,8 +33,11 @@ const SlideshowImages = () => {
     };
   }, [currentSlideIndex]);
 
+  useEffect(() => {
+    AOS.init({ duration: 2500 });
+  }, []);
   return (
-    <div className="slideshow-images-container">
+    <div className="slideshow-images-container" data-aos="fade-in">
       {slides.map((slide, index) => (
         <img
           className={`carousel-img ${index === currentSlideIndex ? "active" : ""}`}
