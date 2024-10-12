@@ -14,9 +14,9 @@ const Projects = () => {
         Projects
       </h2>
       <div id="projects" data-aos="fade-in">
-        <ProjectCard link={""} title={"Fantasy Football Website"} />
-        <ProjectCard link={""} title={"Etch-A-Sketch"} />
-        <ProjectCard link={""} title={"Rock-Paper-Scissors"} />
+        <ProjectCard link={""} title={"Fantasy Football Website (React)"} />
+        <ProjectCard link={""} title={"Etch-A-Sketch (Javascript)"} />
+        <ProjectCard link={""} title={"Rock-Paper-Scissors (Javascript)"} />
       </div>
     </>
   );

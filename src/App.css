@@ -126,7 +126,6 @@ body {
 
 #bio {
   color: #6eacda;
-  text-align:;
   width: 80%;
   padding-left: 50px;
 }
@@ -211,6 +210,8 @@ header {
   margin-top: 200px;
   margin-bottom: 25px;
   color: #e2e2b6;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 
 #projects {
@@ -222,6 +223,9 @@ header {
   margin-bottom: 75px;
 }
 
+.card-pathways {
+  text-decoration: none;
+}
 #dynasty {
   background-image: url(./images/Dynasty\ Website\ Image.jpg);
   background-size: cover;
@@ -253,4 +257,83 @@ header {
   height: 350px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
+}
+
+.form-container {
+  background-color: #ffffff; /* White background for form */
+  padding: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 12px; /* Rounded corners for smooth look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.page-heading {
+  font-size: 32px;
+  color: #333; /* Dark text color for readability */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.row-form {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1;
+}
+
+#first-name,
+#last-name {
+  width: 80%;
+}
+
+.form-item {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.form-item:focus {
+  outline: none;
+  border-color: #6eacda; /* Light blue border on focus */
+  box-shadow: 0 0 8px rgba(110, 172, 218, 0.2); /* Soft focus shadow */
+}
+
+textarea.form-item {
+  resize: none;
+}
+
+#btn-contact {
+  width: 100%;
+  padding: 14px;
+  background-color: #6eacda; /* Button color */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-contact:hover {
+  background-color: #569bc2; /* Darker shade on hover */
+}
+
+#select-options {
+  cursor: pointer;
 }
