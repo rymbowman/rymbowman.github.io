@@ -1,24 +1,30 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
+import HeaderGreeting from "./components/HeaderGreeting";
 import About from "./components/About";
 import SlideshowImages from "./components/SlideshowImages";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import HeaderBio from "./components/HeaderBio";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="main-content">
-      <Header />
-
+      <NavBar />
+      <HeaderGreeting />
+      <HeaderBio />
       <div id="about-section-intro">
         <p>
-          Thanks for visiting! Trust is key to any relationship, so here's a bit
-          about me...
+          Thanks for visiting! Trust is key to any relationship, so here is a
+          bit about me...
         </p>
       </div>
-      <About />
-      <SlideshowImages />
+      <div id="about-container">
+        <About />
+        <SlideshowImages />
+      </div>
+
       <Projects />
       <Contact />
     </div>
