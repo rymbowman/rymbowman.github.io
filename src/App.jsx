@@ -1,30 +1,24 @@
 import React from "react";
-import "./App.css";
-import HeaderGreeting from "./components/HeaderGreeting";
-import About from "./components/About";
-import SlideshowImages from "./components/SlideshowImages";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import HeaderBio from "./components/HeaderBio";
-import NavBar from "./components/NavBar";
-import AboutIntro from "./components/AboutIntro";
+import Homepage from "./pages/Homepage";
+import Connect from "./pages/Connect";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Homepage />} />
+      <Route path="/connect" element={<Connect />} />
+    </Route>
+  )
+);
 function App() {
-  return (
-    <div className="main-content">
-      <NavBar />
-      <HeaderGreeting />
-      <HeaderBio />
-      <AboutIntro />
-      <div id="about-container">
-        <About />
-        <SlideshowImages />
-      </div>
-
-      <Projects />
-      <Contact />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
