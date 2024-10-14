@@ -3,7 +3,7 @@ import HeaderGreeting from "../components/HeaderGreeting";
 import About from "../components/About";
 import SlideshowImages from "../components/SlideshowImages";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+import Contacts from "../components/Contacts";
 import HeaderBio from "../components/HeaderBio";
 import AboutIntro from "../components/AboutIntro";
 import "../App.css";
@@ -19,7 +19,7 @@ const Homepage = () => {
       </div>
 
       <Projects />
-      <Contact />
+      <Contacts />
     </div>
   );
 };

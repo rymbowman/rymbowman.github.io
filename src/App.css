@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #021526;
   font-family: "Poppins", sans-serif;
 }
@@ -18,7 +17,6 @@ body {
 #navbar {
   display: flex;
   color: white;
-  font-size: 25px;
   align-items: center;
   margin-top: 15px;
   margin-bottom: 0;
@@ -259,13 +257,23 @@ header {
   box-shadow: 5px 5px 5px black;
 }
 
+.connect-page {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
 .form-container {
-  background-color: #ffffff; /* White background for form */
+  border: 2.5px solid white; /* White background for form */
+  font-family: "Poppins", sans-serif;
   padding: 40px;
   max-width: 600px;
-  margin: 50px auto;
   border-radius: 12px; /* Rounded corners for smooth look */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.4); /* Subtle shadow for elevation */
 }
 
 form {
@@ -275,9 +283,10 @@ form {
 }
 .page-heading {
   font-size: 32px;
-  color: #333; /* Dark text color for readability */
+  color: #e2e2b6; /* Dark text color for readability */
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 1.5px;
 }
 
 .row-form {
@@ -336,4 +345,50 @@ textarea.form-item {
 
 #select-options {
   cursor: pointer;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: fit-content;
+  gap: 15px;
+  padding-top: 25px;
+  border-top: 1px solid white;
+}
+
+.contact-container {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-img {
+  font-size: 50px;
+  color: white;
+}
+
+.contact-tooltip {
+  opacity: 0;
+  font-size: 18px;
+  color: white;
+  transition: opacity 0.2s ease; /* Smooth transition */
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 3px;
+}
+
+.contact-img:hover + .contact-tooltip {
+  opacity: 1; /* Show tooltip when hovering over the icon */
+  border-top: 1px solid #6eacda;
 }
