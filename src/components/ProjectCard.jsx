@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-const ProjectCard = ({ link, title }) => {
+const ProjectCard = ({ id, link, title }) => {
   return (
     <>
-      <a href={link} className="card-pathways" id="dynasty">
+      <a href={link} className="card-pathways" id={id}>
         <div>
           <h3 className="card-heading">{title}</h3>
         </div>
@@ -12,6 +12,7 @@ const ProjectCard = ({ link, title }) => {
   );
 };
 ProjectCard.propTypes = {
+  id: PropTypes.string,
   link: PropTypes.string,
   title: PropTypes.string,
 };

@@ -1,68 +1,56 @@
 import React from "react";
 import "../App.css";
+import FormItem from "../components/FormItem";
 
 const Connect = () => {
   return (
     <div className="connect-page">
       <div className="form-container">
         <h1 className="page-heading">{"Let's Connect!"}</h1>
-        <form>
-          <div className="row-form">
-            <div className="col">
+        <form className="form">
+          <div className="names-row">
+            <FormItem
+              type={"text"}
+              name={"fname"}
+              placeholder={"First Name"}
+              id={"first-name"}
+            />
+            <FormItem
+              type={"text"}
+              name={"lname"}
+              placeholder={"Last Name"}
+              id={"last-name"}
+            />
+          </div>
+          <FormItem
+            type={"email"}
+            name={"email"}
+            placeholder={"Email"}
+            id={"email"}
+          />
+          <FormItem type={"phone"} placeholder={"Phone"} id={"phone"} />
+          <div className="contact-reason">
+            <div id="website-design">
+              <label htmlFor="website-design">Website Design</label>
               <input
-                type="name"
-                className="form-item"
-                id="first-name"
-                placeholder="First name"
-              ></input>
+                type="radio"
+                name="website-design"
+                className="radio-dial"
+              />
             </div>
-            <div className="col">
-              <input
-                type="name"
-                className="form-item"
-                id="last-name"
-                placeholder="Last name"
-              ></input>
+            <div id="schedule-interview">
+              <label htmlFor="interview">Schedule Interview</label>
+              <input type="radio" name="interview" className="radio-dial" />
             </div>
           </div>
-          <div className="row-form">
-            <input
-              type="email"
-              className="form-item"
-              id="email"
-              name="email"
-              placeholder="Email"
-            ></input>
-          </div>
-          <div className="row-form">
-            <input
-              type="phone"
-              className="form-item"
-              id="phone"
-              placeholder="Phone"
-            ></input>
-          </div>
-          <div className="row-form">
-            <select
-              name="select-options"
-              className="form-item"
-              id="select-options"
-            >
-              <option value="1">Select an option</option>
-              <option value="2">Schedule Interview</option>
-              <option value="3">Website Design</option>
-            </select>
-          </div>
-          <div className="row-form">
-            <input
-              type="subject"
-              className="form-item"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-            ></input>
-          </div>
-          <div className="row-form">
+          <FormItem
+            type={"text"}
+            name={"subject"}
+            placeholder={"Subject"}
+            id={"subject"}
+          />
+
+          <div className="form-row">
             <textarea
               type="message"
               className="form-item"
