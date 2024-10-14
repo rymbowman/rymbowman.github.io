@@ -1,13 +1,12 @@
 import React from "react";
 import "../App.css";
-import Contacts from "../components/Contacts";
 
 const Connect = () => {
   return (
     <div className="connect-page">
       <div className="form-container">
+        <h1 className="page-heading">{"Let's Connect!"}</h1>
         <form>
-          <h1 className="page-heading">{"Let's Connect!"}</h1>
           <div className="row-form">
             <div className="col">
               <input

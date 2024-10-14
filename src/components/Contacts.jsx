@@ -1,7 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contacts = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2500 });
+  }, []);
   return (
-    <div className="contact-methods">
+    <div className="contact-methods" data-aos="fade-in">
       <div className="contact-container">
         <a href="" id="github" className="contact-link">
           <i className={"bx bxl-github contact-img"}></i>
