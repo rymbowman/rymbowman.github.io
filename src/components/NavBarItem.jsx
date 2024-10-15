@@ -6,7 +6,9 @@ const NavBarItem = ({ navItem, link, iconImage, tooltip }) => {
     <div className="nav-item">
       <Link to={link} id={navItem}>
         <i className={iconImage}></i>
-        <p className="nav-tooltip">{tooltip}</p>
+        <p className="nav-tooltip" onClick={(e) => e.preventDefault()}>
+          {tooltip}
+        </p>
       </Link>
     </div>
   );

@@ -34,13 +34,17 @@ const Connect = () => {
               <label htmlFor="website-design">Website Design</label>
               <input
                 type="radio"
-                name="website-design"
+                name="contact-reason"
                 className="radio-dial"
               />
             </div>
             <div id="schedule-interview">
               <label htmlFor="interview">Schedule Interview</label>
-              <input type="radio" name="interview" className="radio-dial" />
+              <input
+                type="radio"
+                name="contact-reason"
+                className="radio-dial"
+              />
             </div>
           </div>
           <FormItem
@@ -49,7 +53,6 @@ const Connect = () => {
             placeholder={"Subject"}
             id={"subject"}
           />
-
           <div className="form-row">
             <textarea
               type="message"

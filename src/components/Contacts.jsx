@@ -10,7 +10,11 @@ const Contacts = () => {
   return (
     <div className="contact-methods" data-aos="fade-in">
       <div className="contact-container">
-        <a href="" id="github" className="contact-link">
+        <a
+          href="https://github.com/rymbowman"
+          id="github"
+          className="contact-link"
+        >
           <i className={"bx bxl-github contact-img"}></i>
           <p className="contact-tooltip">Github</p>
         </a>

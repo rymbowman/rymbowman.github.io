@@ -48,8 +48,10 @@ body {
   margin-bottom: 0;
   padding-top: 3px;
   border-top: 1px solid #6eacda;
+  cursor: default;
 }
 
+#nav-home,
 #nav-resume,
 #nav-connect {
   display: flex;
@@ -61,23 +63,32 @@ body {
 }
 
 #nav-resume i:hover + .nav-tooltip,
-#nav-connect i:hover + .nav-tooltip {
+#nav-connect i:hover + .nav-tooltip,
+#nav-home i:hover + .nav-tooltip {
   opacity: 1; /* Show tooltip when hovering over the icon */
   border-top: 1px solid #6eacda;
 }
 
 #nav-resume i,
-#nav-connect i {
+#nav-connect i,
+#nav-home i {
   font-size: 40px; /* Size of the icon */
   color: #6eacda; /* Icon color */
   transition: transform 0.2s; /* Smooth scaling effect on hover */
 }
 
+#nav-home i:hover,
 #nav-resume i:hover,
 #nav-connect i:hover {
   transform: scale(1.2); /* Scale up the icon on hover */
 }
 
+#nav-home i:active,
+#nav-resume i:active,
+#nav-connect i:active {
+  transform: translateY(2px); /* Move down slightly */
+  filter: brightness(150%);
+}
 #header-intro {
   display: flex;
   flex-direction: row;

@@ -5,6 +5,12 @@ const NavBar = () => {
   return (
     <div id="navbar">
       <NavBarItem
+        link={"/"}
+        navItem={"nav-home"}
+        iconImage={"bx bx-home-alt-2"}
+        tooltip={"Home"}
+      />
+      <NavBarItem
         link={"/resume"}
         navItem={"nav-resume"}
         iconImage={"bx bx-file"}
