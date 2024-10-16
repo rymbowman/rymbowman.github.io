@@ -1,13 +1,43 @@
-import React from "react";
 import "../App.css";
+import React, { useState } from "react";
 import FormItem from "../components/FormItem";
 
 const Connect = () => {
+  const [contactReason, setContactReason] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const fname = form.fname.value;
+    const lname = form.lname.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+    try {
+      const response = await fetch("/api/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fname,
+          lname,
+          email,
+          phone,
+          contactReason,
+          subject,
+          message,
+        }),
+      });
+      const data = await response.json();
+    } catch (err) {}
+  };
   return (
     <div className="connect-page">
       <div className="form-container">
         <h1 className="page-heading">{"Let's Connect!"}</h1>
-        <form className="form">
+        <form className="form" onSubmit={handleSubmit}>
           <div className="names-row">
             <FormItem
               type={"text"}
@@ -28,22 +58,31 @@ const Connect = () => {
             placeholder={"Email"}
             id={"email"}
           />
-          <FormItem type={"phone"} placeholder={"Phone"} id={"phone"} />
+          <FormItem
+            type={"phone"}
+            placeholder={"Phone"}
+            id={"phone"}
+            name={"phone"}
+          />
           <div className="contact-reason">
             <div id="website-design">
               <label htmlFor="website-design">Website Design</label>
               <input
                 type="radio"
-                name="contact-reason"
+                name="contactReason"
                 className="radio-dial"
+                value={"website design"}
+                onChange={(e) => setContactReason(e.target.value)}
               />
             </div>
             <div id="schedule-interview">
               <label htmlFor="interview">Schedule Interview</label>
               <input
                 type="radio"
-                name="contact-reason"
+                name="contactReason"
                 className="radio-dial"
+                value={"schedule interview"}
+                onChange={(e) => setContactReason(e.target.value)}
               />
             </div>
           </div>

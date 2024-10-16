@@ -14,6 +14,11 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Homepage />} />
       <Route path="/connect" element={<Connect />} />
+      <Route path="/resume" element={<h1>Resume Page</h1>} />
+      <Route
+        path="*"
+        element={<h1>Page not found. Please return to home page.</h1>}
+      />
     </Route>
   )
 );
