@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-const FormItem = ({ type, placeholder, name, id, rows }) => {
+const FormItem = ({ type, placeholder, name, id, className, rows }) => {
   return (
     <div className="form-row" id={id}>
       <input
         type={type}
-        className="form-item"
-        id={id}
+        className={className}
         name={name}
         placeholder={placeholder}
         rows={rows}
@@ -20,5 +19,6 @@ FormItem.propTypes = {
   name: PropTypes.string,
   id: PropTypes.string,
   rows: PropTypes.number,
+  className: PropTypes.string,
 };
 export default FormItem;
