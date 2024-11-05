@@ -303,6 +303,7 @@ header {
   align-items: center;
   width: 80%;
   gap: 20px;
+  font-family: "Roboto Slab", serif;
 }
 
 .form-row {
@@ -311,6 +312,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .page-heading {
   font-size: 32px;
   color: white; /* Dark text color for readability */
@@ -320,23 +322,7 @@ header {
 
 .names-row {
   display: flex;
-}
-
-.col {
-  flex: 1;
-}
-
-#first-name {
-  display: flex;
-  justify-content: start;
-}
-#last-name {
-  display: flex;
-  justify-content: end;
-}
-#first-name,
-#last-name {
-  width: 80%;
+  gap: 5%;
 }
 
 .radio-dial:hover {
@@ -452,4 +438,32 @@ textarea.form-item {
 .contact-img:hover + .contact-tooltip {
   opacity: 1; /* Show tooltip when hovering over the icon */
   border-top: 1px solid #6eacda;
+}
+
+.success-message {
+  font-size: 40px;
+  color: white;
+  font-family: "Roboto slab", serif;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/*Large screens (desktops)*/
+@media (min-width: 1200px) {
+}
+
+/*Medium Screens (tablets)*/
+@media (max-width: 1199px) and (min-width: 768px) {
+}
+
+/*Small screens (phones, etc.)*/
+@media (max-width: 767px) {
 }
