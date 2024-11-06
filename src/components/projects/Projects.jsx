@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../projects/Projects.css";
 import ProjectCard from "./ProjectCard";
 import { useEffect } from "react";
 import AOS from "aos";

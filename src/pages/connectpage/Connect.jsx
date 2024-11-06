@@ -1,6 +1,6 @@
-import "../App.css";
+import "../connectpage/Connect.css";
 import React, { useState } from "react";
-import FormItem from "../components/FormItem";
+import FormItem from "../../components/connectForm/FormItem";
 
 const Connect = () => {
   const [contactReason, setContactReason] = useState("");

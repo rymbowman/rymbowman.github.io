@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "../header/Header.css";
 const HeaderBio = () => {
   return (
     <div id="header-bio">

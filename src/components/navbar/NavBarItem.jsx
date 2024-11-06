@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "../navbar/NavBar.css";
+
 const NavBarItem = ({ navItem, link, iconImage, tooltip }) => {
   return (
     <div className="nav-item">
