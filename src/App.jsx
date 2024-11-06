@@ -1,6 +1,6 @@
 import React from "react";
-import Homepage from "./pages/Homepage";
-import Connect from "./pages/Connect";
+import Homepage from "./pages/homepage/Homepage";
+import Connect from "./pages/connectpage/Connect";
 import {
   createBrowserRouter,
   createRoutesFromElements,
