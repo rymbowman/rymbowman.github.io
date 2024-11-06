@@ -12,7 +12,8 @@ const NavBar = () => {
         tooltip={"Home"}
       />
       <NavBarItem
-        link={"/resume"}
+        link={"https://rymbowman.github.io/Resume/ "}
+        target="_blank"
         navItem={"nav-resume"}
         iconImage={"bx bx-file"}
         tooltip={"Resume"}
