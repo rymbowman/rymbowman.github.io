@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../contacts/Contacts.css";
+import { Link } from "react-router-dom";
+import Connect from "../../pages/connectpage/Connect";
 const Contacts = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });
@@ -12,6 +14,8 @@ const Contacts = () => {
       <div className="contact-container">
         <a
           href="https://github.com/rymbowman"
+          target="_blank"
+          rel="noopener noreferrer"
           id="github"
           className="contact-link"
         >
@@ -20,22 +24,22 @@ const Contacts = () => {
         </a>
       </div>
       <div className="contact-container">
-        <a href="" id="LinkedIn" className="contact-link">
+        <a
+          href="https://www.linkedin.com/in/ryanbowman24"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="LinkedIn"
+          className="contact-link"
+        >
           <i className={"bx bxl-linkedin-square contact-img"}></i>
           <p className="contact-tooltip">LinkedIn</p>
         </a>
       </div>
       <div className="contact-container">
-        <a href="" id="email" className="contact-link">
+        <Link to="/connect" id="email" className="contact-link">
           <i className={"bx bx-envelope contact-img"}></i>
           <p className="contact-tooltip">Email</p>
-        </a>
-      </div>
-      <div className="contact-container">
-        <a href="" id="facebook" className="contact-link">
-          <i className={"bx bxl-facebook-square contact-img"}></i>
-          <p className="contact-tooltip">Facebook</p>
-        </a>
+        </Link>
       </div>
     </div>
   );
