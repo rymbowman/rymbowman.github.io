@@ -1,0 +1,63 @@
+#projects-title {
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 25px;
+  color: #e2e2b6;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 35px;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.card-pathways {
+  text-decoration: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-pathways:hover {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+#dynasty {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/Dynasty-Website-Image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+}
+
+#etch-a-sketch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/Etch-A-Sketch-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+}
+
+#rock-paper-scissors {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/Rock-Paper-Scissors.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+}
