@@ -8,7 +8,6 @@ import image6 from "../../assets/images/image6.jpg";
 import image7 from "../../assets/images/image7.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../../App.css";
 const SlideshowImages = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const slides = [image1, image2, image3, image4, image5, image6, image7];
