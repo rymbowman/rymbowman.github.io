@@ -4,7 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../contacts/Contacts.css";
 import { Link } from "react-router-dom";
-import Connect from "../../pages/connectpage/Connect";
 const Contacts = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });

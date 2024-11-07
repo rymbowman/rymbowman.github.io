@@ -73,7 +73,7 @@ const Connect = () => {
 
     if (isValid) {
       try {
-        const response = await fetch("/api/message", {
+        await fetch("/api/message", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const Connect = () => {
             message,
           }),
         });
-        const data = await response.json();
+
         setSuccess("Message sent successfully!");
         setFormSubmitted(true);
         setError("");
