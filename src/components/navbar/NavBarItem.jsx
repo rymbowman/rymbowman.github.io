@@ -3,20 +3,13 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "../navbar/NavBar.css";
 
-const NavBarItem = ({
-  navItem,
-  link,
-  iconImage,
-  tooltip,
-  target = "_self",
-}) => {
+const NavBarItem = ({ link, iconImage, tooltip, target = "_self" }) => {
   return (
     <div className="nav-item">
       <Link
         to={link}
         target={target}
         rel={target === "_blank" ? "noopener noreferrer" : "undefined"}
-        id={navItem}
       >
         <i className={iconImage}></i>
         <p className="nav-tooltip" onClick={(e) => e.preventDefault()}>
