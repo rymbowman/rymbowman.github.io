@@ -10,28 +10,34 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "blog-website",
+      link: "https://platform-blogging-app.onrender.com/",
+      githubLink: [
+        "https://github.com/rymbowman/Blog-App-Client, https://github.com/rymbowman/Blog-App-Api",
+      ],
+      title: "Platform Blogging Website",
+      description: "React, Node.js, AWS (dynamoDB), Express, CSS",
+    },
+    {
       id: "fantasy-football",
       link: "https://fantasy-football-website.onrender.com",
       githubLink: "https://github.com/rymbowman/Fantasy-Football-Website",
-      title: "Fantasy Football Website (React)",
+      title: "Fantasy Football Website",
+      description: "React, CSS, API integration",
     },
     {
-      id: "blog-website",
+      id: "Etch-A-Sketch",
       link: "",
-      githubLink: "",
-      title: "Blog Website (React, Node.js, PostgreSQL)",
-    },
-    {
-      id: "rock-paper-scissors",
-      link: "",
-      githubLink: "",
-      title: "Rock-Paper-Scissors (JS)",
+      githubLink: "https://github.com/rymbowman/Etch-A-Sketch-Final-Project",
+      title: "Etch-A-Sketch",
+      description: "Javascript, HTML, CSS",
     },
     {
       id: "todo-app",
       link: "",
       githubLink: "",
-      title: "To-do Application (React)",
+      title: "Task Management Application",
+      description: "React, MUI, CSS",
     },
   ];
 
@@ -40,10 +46,11 @@ const Projects = () => {
       <h2 id="projects-title" data-aos="fade-in">
         Projects
       </h2>
-      <div className="projects-tileContainer" data-aos="fade-in">
+      <div className="tile-container" data-aos="fade-in">
         {projects.map((project) => (
           <div key={project.id} className="project-tile">
             <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
             <div className="project-links">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Live Site
