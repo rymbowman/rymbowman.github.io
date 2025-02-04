@@ -1,63 +1,108 @@
-#projects-title {
-  margin: auto;
-  margin-top: 200px;
-  margin-bottom: 25px;
-  color: #e2e2b6;
-  font-size: 28px;
-  text-transform: uppercase;
-}
-
-#projects {
+.projects-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 35px;
-  justify-content: center;
-  margin-bottom: 75px;
-}
-
-.card-pathways {
-  text-decoration: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s;
-  border-radius: 12px;
-  color: white;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 75px;
+  width: 95%;
 }
 
-.card-pathways:hover {
-  transform: scale(0.95);
-  box-shadow: none;
+#projects-title {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  color: #e2e2b6;
+  font-size: 36px;
+  text-transform: uppercase;
+  border-bottom: #6eacda 2px solid;
+  padding: 2.5px 10px;
 }
 
-#dynasty {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/Dynasty-Website-Image.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 350px;
-  height: 350px;
+.projects-tileContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-#etch-a-sketch {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/Etch-A-Sketch-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 350px;
-  height: 350px;
+.project-tile {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 40%;
 }
 
-#rock-paper-scissors {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url(./assets/images/Rock-Paper-Scissors.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 350px;
-  height: 350px;
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-links a {
+  color: #6eacda;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: #e2e2b6;
+}
+
+/* Medium Screens (tablets) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  #projects-title {
+    font-size: 32px;
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-links a {
+    font-size: 16px;
+  }
+}
+
+/* Small screens (phones, etc.) */
+@media (max-width: 767px) {
+  #projects-title {
+    font-size: 28px;
+  }
+
+  #projects-container {
+    gap: 20px;
+  }
+
+  .project-tile {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-links a {
+    font-size: 14px;
+  }
+}
+
+/* smallest screens */
+@media (max-width: 575px) {
+  .projects-tileContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    width: 80%;
+    padding: 20px 10px;
+  }
 }
