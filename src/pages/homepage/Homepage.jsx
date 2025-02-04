@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderGreeting from "../../components/header/HeaderGreeting";
 import About from "../../components/about/About";
-import SlideshowImages from "../../components/about/SlideshowImages";
 import Projects from "../../components/projects/Projects";
 import Contacts from "../../components/contacts/Contacts";
 import HeaderBio from "../../components/header/HeaderBio";
@@ -13,10 +12,7 @@ const Homepage = () => {
       <HeaderGreeting />
       <HeaderBio />
       <AboutIntro />
-      <div id="about-container">
-        <About />
-        <SlideshowImages />
-      </div>
+      <About />
       <Projects />
       <Contacts />
     </div>
