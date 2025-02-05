@@ -25,40 +25,59 @@
 }
 
 .project-tile {
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
-  padding: 40px 20px;
-  border-radius: 12px;
-  color: white;
+  background: #021526;
+  border: 1px solid #e2e2b6;
+  color: #e2e2b6;
   text-align: center;
   transition: transform 0.2s;
   width: 40%;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .project-title {
   font-size: 24px;
+  color: #e2e2b6;
   border-bottom: 2px solid #6eacda;
-  padding: 5px 15px;
+  padding: 15px 0px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
   margin: 0;
 }
 
 .project-description {
   font-size: 16px;
   font-weight: normal;
+  padding: 15px 0;
+  width: 90%;
+  margin: 0;
+}
+
+.multiple-github-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-links {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 90%;
+  padding: 15px 0;
+  align-items: center;
+  margin: 0;
 }
 
 .project-links a {
   color: #6eacda;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.2s;
 }
 
